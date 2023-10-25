@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Blog</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlaza tu archivo de estilos CSS -->
+    <style>
+        body {
+            text-align: center; /* Centra el contenido */
+            background-color: #f0f0f0; /* Color de fondo */
+        }
+        header {
+            background-color: #333; /* Color de fondo del encabezado */
+            color: white; /* Color del texto del encabezado */
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        article {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: white; /* Color de fondo del artículo */
+            border: 1px solid #ccc; /* Borde del artículo */
+            text-align: left;
+        }
+        aside {
+            width: 30%;
+            padding: 20px;
+            background-color: white; /* Color de fondo de la barra lateral */
+            border: 1px solid #ccc; /* Borde de la barra lateral */
+            text-align: left;
+        }
+        footer {
+            background-color: #333; /* Color de fondo del pie de página */
+            color: white; /* Color del texto del pie de página */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="sobre.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Título de tu entrada de blog</h2>
+            <p>Fecha de publicación: 01 de enero de 2023</p>
+            <p>Aquí va el contenido de tu entrada de blog. Puedes escribir sobre lo que desees.</p>
+        </article>
+
+        <!-- Puedes añadir más entradas de blog aquí -->
+
+        <article>
+            <h2>Otra entrada de blog</h2>
+            <p>Fecha de publicación: 05 de enero de 2023</p>
+            <p>Este es otro contenido interesante para tu blog.</p>
+        </article>
+    </main>
+
+    <aside>
+        <section>
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Categoría 1</a></li>
+               
