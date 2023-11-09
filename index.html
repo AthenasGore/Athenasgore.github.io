@@ -1,41 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://media.tenor.com/Hq7KtCAo7i0AAAAC/lolgel.gif') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white; /* Color del texto */
-            font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipo de fuente del texto */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Voltaire');
 
-        h1 {
-            font-size: 3em; /* Tamaño del texto */
-            text-align: center;
-            cursor: pointer; /* Cambia el cursor al pasar por encima del texto */
-        }
+    *, *:before, *:after {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      box-sizing: border-box;
+    }
 
-        h1 a {
-            color: inherit; /* Hereda el color del texto del contenedor */
-            text-decoration: none; /* Quita el subrayado del enlace */
-            transition: color 0.3s; /* Agrega una transición para el cambio de color */
-        }
+    body {
+      text-align: center;
+      background-color: black;
+    }
 
-        h1 a:hover {
-            color: red; /* Cambia el color al pasar el ratón por encima */
-        }
-    </style>
-    <title>Página con Fondo de Imagen</title>
+    nav {
+      font-family: 'Voltaire', sans-serif;
+      color: white;
+      display: inline-block;
+    }
+
+    nav > a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.4em;
+      text-transform: UPPERCASE;
+      transform-origin: 0 0;
+      transform: matrix(1, -0.4, 0, 1.2, 0, 100);
+      padding: .2em;
+      margin-bottom: .3em;
+      transition: .5s background;
+    }
+
+    .home {
+      font-size: 3em;
+    }
+
+    nav > a:nth-of-type(even) {
+      border-right: 6px solid; 
+      border-top: 1px solid;   
+      border-bottom: 1px solid;  
+    }
+
+    nav > a:nth-of-type(odd) {
+      border-left: 6px solid;
+    }
+
+    nav > a:hover, nav > a:focus {
+      background: white;
+      color: black;
+      border-color: white;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="https://twitter.com/AthenasGore?newtwitter=true" target="_blank">@athenasgore</a></h1>
+  <nav role='navigation'>
+    <a href="#" class='home'>Athenas gore</a>
+    <a href="#">Shacoholic</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contacto</a>
+  </nav>
 </body>
 </html>
+
