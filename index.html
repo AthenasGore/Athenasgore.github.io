@@ -6,45 +6,47 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Voltaire');
     
-    body {    /*si borro esto se queda en blanco*/
+    body {
       text-align: center;
       background-color: black;
+      margin: 0;
+      padding: 0;
     }
 
-    nav {     /*esto son los colores diria*/
+    nav {
       font-family: 'Voltaire', sans-serif;
       color: white;
       display: inline-block;
     }
 
-    nav > a {    /*esto es todo el texto la fuente y eso*/
+    nav > a {
       display: block;
       text-decoration: none;
       color: inherit;
-      font-size: 1.4em;
-      text-transform: UPPERCASE;
+      font-size: 1.6em; /* Aumenté el tamaño de la fuente */
+      text-transform: uppercase;
       transform-origin: 0 0;
       transform: matrix(1, -0.4, 0, 1.2, 0, 100);
-      padding: .2em;
-      margin-bottom: .3em;
+      padding: .4em; /* Aumenté el espaciado interno */
+      margin-bottom: .5em; /* Aumenté el margen inferior */
       transition: .5s background;
     }
 
-    .home {    /*esto es el titulo mas tarde */
-      font-size: 3em;
+    .home {
+      font-size: 3.5em; /* Aumenté el tamaño de la fuente para el título */
     }
 
-    nav > a:nth-of-type(even) {   /*esto es las celdas*/
-      border-right: 6px solid; 
+    nav > a:nth-of-type(even) {
+      border-right: 8px solid; /* Aumenté el grosor del borde derecho */
       border-top: 1px solid;   
       border-bottom: 1px solid;  
     }
 
-    nav > a:nth-of-type(odd) {  /*esto es de las barritas pequeñas de la derecha*/
-      border-left: 6px solid;
+    nav > a:nth-of-type(odd) {
+      border-left: 8px solid; /* Aumenté el grosor del borde izquierdo */
     }
 
-    nav > a:hover, nav > a:focus {  /*esto es las animaciones de cuando pasas el raton */
+    nav > a:hover, nav > a:focus {
       background: rgb(255, 255, 255);
       color: black;
       border-color: rgb(255, 255, 255);
