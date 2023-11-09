@@ -6,12 +6,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Voltaire');
 
-    *, *:before, *:after {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      box-sizing: border-box;
-    }
+ 
 
     body {
       text-align: center;
@@ -24,7 +19,28 @@
       display: inline-block;
     }
 
+    nav > a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.4em;
+      text-transform: UPPERCASE;
+      transform-origin: 0 0;
+      transform: matrix(1, -0.4, 0, 1.2, 0, 100);
+      padding: .2em;
+      margin-bottom: .3em;
+      transition: .5s background;
+    }
 
+    .home {
+      font-size: 3em;
+    }
+
+    nav > a:nth-of-type(even) {
+      border-right: 6px solid; 
+      border-top: 1px solid;   
+      border-bottom: 1px solid;  
+    }
   </style>
 </head>
 <body>
