@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Voltaire');
-    
+
+    *, *:before, *:after {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      box-sizing: border-box;
+    }
+
     body {
       text-align: center;
       background-color: black;
@@ -39,15 +46,26 @@
       border-top: 1px solid;   
       border-bottom: 1px solid;  
     }
+
+    nav > a:nth-of-type(odd) {
+      border-left: 6px solid;
+    }
+
+    nav > a:hover, nav > a:focus {
+      background: white;
+      color: black;
+      border-color: white;
+    }
   </style>
 </head>
 <body>
   <nav role='navigation'>
     <a href="#" class='home'>Athenas gore</a>
-    <a href="#">Spotify</a>
-    <a href="#">Redes</a>
-    <a href="#">Discord</a>
-    <a href="x">Minerva</a>
+    <a href="#">Shacoholic</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contacto</a>
   </nav>
 </body>
 </html>
